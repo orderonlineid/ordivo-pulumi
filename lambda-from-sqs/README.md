@@ -1,6 +1,6 @@
-# Flunarizin
+# Lambda from SQS (plus trigger)
 
-This project was created to accommodate the need for a bootstrap structure for my future lambda project that will be deployed to AWS.
+This project was created to accommodate the need for a bootstrap structure for Ordivo future lambda project that will be deployed to AWS. We sometimes need to create a lambda function that will be triggered by SQS. This project will help us to create a lambda function that will be triggered by SQS.
 
 ## How to Run
 
