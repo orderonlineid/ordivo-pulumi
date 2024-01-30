@@ -1,5 +1,6 @@
 BREWPATH=/opt/homebrew
 GOCMD=go
+GOMOD=$(GOCMD) mod
 GOFUMPT=gofumpt
 GOFUMPTPATH := $(GOPATH)/bin/gofumpt
 GOFUMPTBREWPATH := $(BREWPATH)/bin/gofumpt
@@ -10,6 +11,9 @@ all: help
 build.go:
 	rm -f function/app.zip && \
 		cd function/go && \
+		$(GOMOD) init oo-lambda || true
+	cd function/go && \
+		$(GOMOD) vendor && \
 		GOOS=linux GOARCH=amd64 $(GOCMD) build -o main . && \
 		zip ../app.zip main && \
 		rm -f main

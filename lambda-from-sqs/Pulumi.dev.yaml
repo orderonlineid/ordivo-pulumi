@@ -1,0 +1,10 @@
+config:
+  aws:profile: aws-cli
+  aws:region: ap-southeast-3
+  language: go
+  name: fitbar
+  is_fifo: true
+  is_prod: true
+  is_public: false
+  url: https://example.com
+  token: DUMMYTOKEN

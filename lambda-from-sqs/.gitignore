@@ -1,6 +1,3 @@
-function/app.zip
-function/go/vendor
-function/js/node_modules
-function/python/**
-!function/python/main.py
-node_modules
+**/node_modules/
+**/vendor/
+**/venv/
